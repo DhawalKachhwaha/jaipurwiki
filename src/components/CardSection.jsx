@@ -9,12 +9,19 @@ function CardSection({ title, data, id, isEmergency }) {
 
   const scroll = (direction) => {
     if (containerRef.current) {
-      const scrollAmount = 350;
-      const currentScroll = containerRef.current.scrollLeft;
-      containerRef.current.scrollTo({
-        left: currentScroll + (direction === 'right' ? scrollAmount : -scrollAmount),
-        behavior: 'smooth'
-      });
+      const card = containerRef.current.querySelector('.card');
+      if (card) {
+        const cardStyle = window.getComputedStyle(card);
+        const cardWidth = card.getBoundingClientRect().width;
+        const marginLeft = parseFloat(cardStyle.marginLeft) || 0;
+        const marginRight = parseFloat(cardStyle.marginRight) || 0;
+        const scrollAmount = cardWidth + marginLeft + marginRight;
+        const currentScroll = containerRef.current.scrollLeft;
+        containerRef.current.scrollTo({
+          left: currentScroll + (direction === 'right' ? scrollAmount : -scrollAmount),
+          behavior: 'smooth'
+        });
+      }
     }
   };
 
