@@ -1,0 +1,26 @@
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: relative;
+}
+
+.scroll-down-indicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+.scroll-down-text {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.scroll-down-arrow {
+  font-size: 20px;
+}

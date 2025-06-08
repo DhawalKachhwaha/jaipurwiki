@@ -1,0 +1,27 @@
+.dark-mode-button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.dark-mode .dark-mode-button {
+  color: white;
+}
+
+.dark-mode-button:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .dark-mode-button {
+    font-size: 18px;
+  }
+}

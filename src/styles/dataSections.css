@@ -1,0 +1,29 @@
+.data-sections-container {
+  padding: 20px 10px;
+  background-color: var(--bg-color);
+  margin-bottom: 0;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode .data-sections-container {
+  background-color: #121212;
+}
+
+.card-section:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .data-sections-container {
+    padding: 30px 15px;
+  }
+  .card-section:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .data-sections-container {
+    padding: 10px 5px;
+  }
+}
