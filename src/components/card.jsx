@@ -18,7 +18,6 @@ function Card({ item }) {
           handleClick();
         }
       }}
-      aria-label={`View details about ${item.title}`}
     >
       {item.image && (
         <img

@@ -37,7 +37,6 @@ function Navbar() {
           <button
             className="menu-button"
             onClick={toggleMenu}
-            aria-label="Toggle navigation menu"
           >
             {isMenuOpen ? '✕' : '☰'}
           </button>
