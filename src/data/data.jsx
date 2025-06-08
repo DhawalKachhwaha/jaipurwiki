@@ -33,56 +33,56 @@ const placesData = [
         id: 1,
         title: 'Jal mahal',
         description: 'Jal Mahal (meaning "Water Palace") is a palace in the middle of the Man Sagar Lake in Jaipur city.',
-        image: 'src/assets/jalmahal.jpeg',
+        image: '/jaipurwiki/assets/jalmahal.jpeg',
         url: 'https://g.co/kgs/15wdEKC'
     },
     {
         id: 2,
         title: 'Nahargarh fort',
         description: 'Nahargarh Fort stands on the edge of the Aravalli Hills, overlooking the city of Jaipur in the Indian state of Rajasthan.',
-        image: 'src/assets/nahargarhfort.jpeg',
+        image: '/jaipurwiki/assets/nahargarhfort.jpeg',
         url: 'https://g.co/kgs/QVWLi5k'
     },
     {
         id: 3,
         title: 'Hawa mahal',
         description: 'The Hawa Mahal is a palace in the city of Jaipur. Built from red and pink sandstone, it is on the edge of the City Palace, Jaipur',
-        image: 'src/assets/hawamahal.jpeg',
+        image: '/jaipurwiki/assets/hawamahal.jpeg',
         url: 'https://g.co/kgs/YhytYSV'
     },
     {
         id: 4,
         title: 'Amber Palace',
         description: 'The palace was the residence of the Rajput Maharajas and their families.',
-        image: 'src/assets/amberpalace.jpeg',
+        image: '/jaipurwiki/assets/amberpalace.jpeg',
         url: 'https://g.co/kgs/2hV4BJX'
     },
     {
         id: 5,
         title: 'Jaigarh Fort',
         description: 'Jaigarh Fort is situated on the promontory called the Cheel ka Teela (Hill of Eagles) of the Aravalli range.',
-        image: 'src/assets/jaigarhfort.jpeg',
+        image: '/jaipurwiki/assets/jaigarhfort.jpeg',
         url: 'https://g.co/kgs/h44sMxZ'
     },
     {
         id: 6,
         title: 'The City Palace',
         description: 'The City Palace, Jaipur is a royal residence and former administrative headquarters of the rulers of the Jaipur State in Jaipur.',
-        image: 'src/assets/citypalace.jpeg',
+        image: '/jaipurwiki/assets/citypalace.jpeg',
         url: 'https://g.co/kgs/kFh5gPV'
     },
     {
         id: 7,
         title: 'Jantar Mantar',
         description: 'The Jantar Mantar is a collection of 19 astronomical instruments built by the Rajput king Sawai Jai Singh, the founder of Jaipur.',
-        image: 'src/assets/jantarmantar.jpeg',
+        image: '/jaipurwiki/assets/jantarmantar.jpeg',
         url: 'https://g.co/kgs/tKVRvor'
     },
     {
         id: 8,
         title: 'Albert Hall Museum',
         description: 'The Albert Hall Museum is the oldest museum of the state and functions as the state museum of Rajasthan.',
-        image: 'src/assets/alberthallmuseum.jpeg',
+        image: '/jaipurwiki/assets/alberthallmuseum.jpeg',
         url: 'https://g.co/kgs/4PnUMuN'
     }
 ];
