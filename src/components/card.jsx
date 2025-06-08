@@ -3,7 +3,7 @@ import '../styles/card.css';
 function Card({ item }) {
   const handleClick = () => {
     if (item.url) {
-      window.open(item.url, '_blank', 'noopener noreferrer');
+      window.open(item.url);
     }
   };
 
@@ -11,13 +11,6 @@ function Card({ item }) {
     <div
       className="card"
       onClick={handleClick}
-      role="button"
-      tabIndex={0}
-      onKeyDown={(e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          handleClick();
-        }
-      }}
     >
       {item.image && (
         <img
