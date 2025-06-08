@@ -26,7 +26,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
-  padding: 10px 80px;
+  padding: 10px 40px;
   justify-items: center;
 }
 
@@ -199,6 +199,9 @@
   #places .card-img {
     height: 180px;
   }
+  .scroll-section-wrapper {
+    padding: 0 10px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -222,5 +225,11 @@
 
   .section-title {
     font-size: 20px;
+  }
+  .scroll-section-wrapper {
+    padding: 0;
+  }
+  .card-section {
+    padding: 10px;
   }
 }
