@@ -7,8 +7,8 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h3>About Jaipur</h3>
-          <p>The Pink City of India</p>
+          <h3>Reference</h3>
+          <p>r/jaipur</p>
         </div>
 
         <div className="footer-section">
@@ -22,12 +22,12 @@ function Footer() {
 
         <div className="footer-section">
           <h3>Contact</h3>
-          <p>Email: info@visitjaipur.com</p>
+          <p>Email: example@example.com</p>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>© {year} Jaipur Tourism</p>
+        <p>© {year} BY Dhawal Kachhwaha</p>
       </div>
     </footer>
   );

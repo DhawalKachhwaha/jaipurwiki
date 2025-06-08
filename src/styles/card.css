@@ -222,7 +222,11 @@
   #places .card-img {
     height: 160px;
   }
-
+  #places .card,
+  #events .card {
+    min-width: 200px;
+    margin: 0 8px;
+  }
   .section-title {
     font-size: 20px;
   }
@@ -231,5 +235,10 @@
   }
   .card-section {
     padding: 10px;
+  }
+  .scroll-button {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
   }
 }
