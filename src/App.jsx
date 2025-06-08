@@ -7,7 +7,7 @@ import './App.css';
 function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/jaipurwiki">
         <div className="app">
           <Navbar />
           <main>
