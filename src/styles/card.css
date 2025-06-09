@@ -135,10 +135,11 @@
 #places .card-container,
 #events .card-container {
   display: flex;
-  overflow-x: hidden;
+  overflow-x: auto;
   scroll-behavior: smooth;
   padding: 10px 0;
   width: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 
 #places .card,
