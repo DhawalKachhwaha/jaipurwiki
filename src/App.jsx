@@ -6,7 +6,6 @@ import './App.css';
 
 function App() {
   return (
-    <ThemeProvider>
       <BrowserRouter basename="/jaipurwiki">
         <div className="app">
           <Navbar />
@@ -17,7 +16,6 @@ function App() {
           </main>
         </div>
       </BrowserRouter>
-    </ThemeProvider>
   );
 }
 
