@@ -57,54 +57,43 @@
   color: #007bff;
 }
 
-.menu-button {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-
 @media (max-width: 768px) {
-  .menu-button {
-    display: block;
-    color: #333;
-  }
-
-  .dark-mode .menu-button {
-    color: white;
-  }
-
   .nav-links {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
+    display: flex;
+    gap: 0.2rem;
     background: white;
-    flex-direction: column;
+    position: static;
+    width: 100%;
     padding: 0;
     margin: 0;
   }
-
   .dark-mode .nav-links {
     background: #121212;
   }
-
-  .nav-links.active {
-    display: flex;
-  }
-
   .nav-links a {
-    padding: 1rem;
+    padding: 0.2rem;
     text-align: center;
+    font-size: 0; /* Hide text */
+    position: relative;
   }
-
-  .nav-links a:hover {
-    background: rgba(0, 0, 0, 0.05);
+  .nav-links li:nth-child(1) a::before {
+    content: "🛬";
+    font-size: 1.3rem;
   }
-
-  .dark-mode .nav-links a:hover {
-    background: rgba(255, 255, 255, 0.05);
+  .nav-links li:nth-child(2) a::before {
+    content: "🚌";
+    font-size: 1.3rem;
+  }
+  .nav-links li:nth-child(3) a::before {
+    content: "🏰";
+    font-size: 1.3rem;
+  }
+  .nav-links li:nth-child(4) a::before {
+    content: "🎉";
+    font-size: 1.3rem;
+  }
+  .nav-links li:nth-child(5) a::before {
+    content: "🚑";
+    font-size: 1.3rem;
   }
 }

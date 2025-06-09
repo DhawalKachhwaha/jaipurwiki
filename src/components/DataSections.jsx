@@ -7,7 +7,7 @@ const sections = [
   { id: 'transportation', title: 'Transportation', data: transportData },
   { id: 'places', title: 'Places to Visit', data: placesData },
   { id: 'events', title: 'Upcoming Events', data: eventsData },
-  { id: 'emergency', title: 'Emergency Information', data: emergencyData, isEmergency: true }
+  { id: 'emergency', title: 'Emergency Information', data: emergencyData }
 ];
 
 function DataSections() {
@@ -19,7 +19,6 @@ function DataSections() {
           id={section.id}
           title={section.title}
           data={section.data}
-          isEmergency={section.isEmergency}
         />
       ))}
     </div>

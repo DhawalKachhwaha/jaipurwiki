@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from 'react';
 import Card from './Card';
 import '../styles/card.css';
 
-function CardSection({ title, data, id, isEmergency }) {
+function CardSection({ title, data, id }) {
   const containerRef = useRef(null);
   const [showLeftButton, setShowLeftButton] = useState(false);
   const [showRightButton, setShowRightButton] = useState(true);
@@ -59,10 +59,9 @@ function CardSection({ title, data, id, isEmergency }) {
               className="scroll-button"
               onClick={() => scroll('left')}
               disabled={!showLeftButton}
-              aria-label="Scroll left"
             >←</button>
           </div>
-          <div ref={containerRef} className="card-container" onScroll={checkScroll}>
+          <div ref={containerRef} className="card-container" >
             {data.map((item) => (
               <Card key={item.id} item={item} />
             ))}
@@ -72,19 +71,15 @@ function CardSection({ title, data, id, isEmergency }) {
               className="scroll-button"
               onClick={() => scroll('right')}
               disabled={!showRightButton}
-              aria-label="Scroll right"
             >→</button>
           </div>
         </div>
       ) : (
-        <div className="card-scroll-wrapper">
-          <div className={`card-container ${isEmergency ? 'emergency-grid' : ''}`}>
+          <div className={`card-container`}>
             {data.map((item) => (
-              <Card key={item.id} item={item} />
+                <Card key={item.id} item={item} />
             ))}
-          </div>
-        </div>
-      )}
+          </div>      )}
     </section>
   );
 }

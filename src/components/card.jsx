@@ -17,7 +17,6 @@ function Card({ item }) {
           src={item.image}
           alt={item.title}
           className="card-img"
-          loading="lazy"
         />
       )}
       <div className="card-content">

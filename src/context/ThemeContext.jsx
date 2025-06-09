@@ -3,10 +3,7 @@ import { createContext, useState, useEffect } from 'react';
 export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [darkMode, setDarkMode] = useState(() => {
-    const saved = localStorage.getItem('darkMode');
-    return saved ? JSON.parse(saved) : false;
-  });
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     const html = document.documentElement;
@@ -17,7 +14,6 @@ export const ThemeProvider = ({ children }) => {
       document.body.classList.remove('dark-mode');
       html.style.colorScheme = 'light';
     }
-    localStorage.setItem('darkMode', JSON.stringify(darkMode));
   }, [darkMode]);
 
   const toggleDarkMode = () => {
@@ -25,8 +21,8 @@ export const ThemeProvider = ({ children }) => {
   };
 
   return (
-    <ThemeContext.Provider value={{ darkMode, toggleDarkMode }}>
-      {children}
-    </ThemeContext.Provider>
+      <ThemeContext.Provider value={{ darkMode, toggleDarkMode }}>
+        {children}
+      </ThemeContext.Provider>
   );
 };
