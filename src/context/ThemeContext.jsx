@@ -5,24 +5,16 @@ export const ThemeContext = createContext();
 export const ThemeProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(true);
 
+  const toggleDarkMode = () => setDarkMode(d => !d);
+
   useEffect(() => {
-    const html = document.documentElement;
-    if (darkMode) {
-      document.body.classList.add('dark-mode');
-      html.style.colorScheme = 'dark';
-    } else {
-      document.body.classList.remove('dark-mode');
-      html.style.colorScheme = 'light';
-    }
+    document.body.classList.toggle('dark-mode', darkMode);
+    document.documentElement.style.colorScheme = darkMode ? 'dark' : 'light';
   }, [darkMode]);
 
-  const toggleDarkMode = () => {
-    setDarkMode(prev => !prev);
-  };
-
   return (
-      <ThemeContext.Provider value={{ darkMode, toggleDarkMode }}>
-        {children}
-      </ThemeContext.Provider>
+    <ThemeContext.Provider value={{ darkMode, toggleDarkMode }}>
+      {children}
+    </ThemeContext.Provider>
   );
 };

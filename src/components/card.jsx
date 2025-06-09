@@ -1,16 +1,10 @@
 import '../styles/card.css';
 
 function Card({ item }) {
-  const handleClick = () => {
-    if (item.url) {
-      window.open(item.url);
-    }
-  };
-
   return (
     <div
       className="card"
-      onClick={handleClick}
+      onClick={() => item.url && window.open(item.url)}
     >
       {item.image && (
         <img
